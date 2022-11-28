@@ -9,7 +9,11 @@ import FormAddMovie from "../../components/Form/Add/Movie";
 const MovieAdd = () => {
   const [movie, setMovie] = useState({
     title: "",
-    content: "",
+    genre: "",
+    director: "",
+    duration: 0,
+    rating: 0,
+    release: 0,
   });
 
   const navigate = useNavigate();
@@ -47,7 +51,7 @@ const MovieAdd = () => {
   return (
     <>
       <Navbar />
-      <Header title={"Tambah Movie"} />
+      <Header title={"Tambah Film"} />
       <main>
         <div className="max-w-3xl mx-auto p-4 sm:px-6 lg:px-8">
           <div className="sm:flex-none space-x-2">

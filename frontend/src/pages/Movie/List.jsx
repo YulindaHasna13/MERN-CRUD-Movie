@@ -44,7 +44,7 @@ const MovieList = () => {
               to={`/dashboard/movie/add`}
               className="inline-flex items-center justify-center px-3 py-2 rounded-lg shadow-lg text-xs font-semibold hover:text-pink-600 hover:bg-pink-50 hover:border-pink-600 focus:outline-none focus:ring-transparent sm:w-auto"
             >
-              Tambah data
+              Tambah Film
             </Link>
           </div>
           <TableMovie movies={movies} deleteMovie={deleteMovie} />

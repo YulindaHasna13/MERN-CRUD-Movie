@@ -21,7 +21,7 @@ const TableMovie = ({ movies, deleteMovie }) => {
                         scope="col"
                         className="px-4 py-2 text-left text-xs font-semibold"
                       >
-                        Konten
+                        Sutradara
                       </th>
                       <th
                         scope="col"
@@ -42,24 +42,24 @@ const TableMovie = ({ movies, deleteMovie }) => {
                           {movie.title}
                         </td>
                         <td className="whitespace-nowrap px-4 py-2 text-xs">
-                          {movie.content}
+                          {movie.director}
                         </td>
                         <td className="relative whitespace-nowrap py-1 pl-3 pr-4 text-right text-xs font-medium sm:pr-6 space-x-2">
                           <Link
                             to={`/dashboard/movie/info/${movie._id}`}
-                            className="hover:text-sky-600"
+                            className="hover:text-pink-600"
                           >
                             Detail
                           </Link>
                           <Link
                             to={`/dashboard/movie/edit/${movie._id}`}
-                            className="hover:text-sky-600"
+                            className="hover:text-pink-600"
                           >
-                            Edit
+                            Ubah
                           </Link>
                           <button
                             onClick={() => deleteMovie(movie._id)}
-                            className="hover:text-rose-600"
+                            className="hover:text-zinc-600"
                           >
                             Hapus
                           </button>

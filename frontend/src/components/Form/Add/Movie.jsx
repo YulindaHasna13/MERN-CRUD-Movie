@@ -26,16 +26,80 @@ const FormAddMovie = ({ movie, handleChange, handleSubmit }) => {
                     </div>
                     <div className="col-span-6 sm:col-span-3">
                       <label
-                        htmlFor="content"
+                        htmlFor="genre"
                         className="block text-xs font-medium"
                       >
-                        Konten
+                        Genre
                       </label>
                       <input
                         type="text"
-                        id="content"
-                        name="content"
-                        value={movie.content}
+                        id="genre"
+                        name="genre"
+                        value={movie.genre}
+                        onChange={handleChange}
+                        className="mt-1 block w-full text-xs border-gray-200 focus:ring-transparent focus:border-gray-200 rounded-lg"
+                      />
+                    </div>
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="director"
+                        className="block text-xs font-medium"
+                      >
+                        Sutradara
+                      </label>
+                      <input
+                        type="text"
+                        id="director"
+                        name="director"
+                        value={movie.director}
+                        onChange={handleChange}
+                        className="mt-1 block w-full text-xs border-gray-200 focus:ring-transparent focus:border-gray-200 rounded-lg"
+                      />
+                    </div>
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="duration"
+                        className="block text-xs font-medium"
+                      >
+                        Durasi
+                      </label>
+                      <input
+                        type="text"
+                        id="duration"
+                        name="duration"
+                        value={movie.duration}
+                        onChange={handleChange}
+                        className="mt-1 block w-full text-xs border-gray-200 focus:ring-transparent focus:border-gray-200 rounded-lg"
+                      />
+                    </div>
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="rating"
+                        className="block text-xs font-medium"
+                      >
+                        Rating
+                      </label>
+                      <input
+                        type="text"
+                        id="rating"
+                        name="rating"
+                        value={movie.rating}
+                        onChange={handleChange}
+                        className="mt-1 block w-full text-xs border-gray-200 focus:ring-transparent focus:border-gray-200 rounded-lg"
+                      />
+                    </div>
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="release"
+                        className="block text-xs font-medium"
+                      >
+                        Rilis
+                      </label>
+                      <input
+                        type="text"
+                        id="release"
+                        name="release"
+                        value={movie.release}
                         onChange={handleChange}
                         className="mt-1 block w-full text-xs border-gray-200 focus:ring-transparent focus:border-gray-200 rounded-lg"
                       />
